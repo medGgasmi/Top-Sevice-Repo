@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Service</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Top Sevice</title>
 </head>
 <body>
+    <header class="header_container">
+        <!--menu
+        Menu should be in be in the left side 
+        menu should include 
+        Profile 
+        views
+        invitations 
+        messages
+        Advertise with us 
+        contact us 
+        Who we are? 
+        Need help?
+        -->
+        <!-----------------------------menu-----------------------------------------------> 
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+          
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+            <img class="menuu" src="img/Menu.svg" alt=""></span>
+
+
+       
+      
     
+    <!----------------------------logo------------------------------------------------>   
+        
+            <div class="logo">
+                <img src="img/Top-service-logo.png" alt="" style="width: 100px;">
+            </div>
+
+
+<!----------------------------User------------------------------------------------> 
+            <div class="user_container">
+            <!----------------------------messages------------------------------------------------> 
+            <div class="messages">
+                <a href="">
+                    <img class="menuu" src="img/messages.svg" alt="">
+                </a>
+            </div>
+
+            <!----------------------------settings------------------------------------------------> 
+            <div class="settings">
+                <a href="">
+                    <img class="menuu" src="img/settings.svg" alt="">
+                </a>
+            </div>
+            <!----------------------------profile------------------------------------------------> 
+            <div class="profile">
+                <a href="">
+                    <img class="menuu" src="img/profile.svg" alt="">
+                </a>
+            </div>
+        </div>    
+       
+        
+        <!----------------------------------------------------------------------->
+        
+        
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "400px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>
+    </header>
 </body>
 </html>
