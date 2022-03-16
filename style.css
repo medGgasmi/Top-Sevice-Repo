@@ -1,3 +1,86 @@
 body {
-    background-color: black;
+    margin: 0;
+    width: 100%;
+    background-color: #E4E4E4;
 }
+
+header {
+    padding: 10px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+    
+}
+.menuu{
+    z-index:2;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.user_container{
+    z-index: 1;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+.logo {
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    
+
+    
+}
+
+/*---------------------------------side nav menu---------------------------------------*/
+.sidenav {
+    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #a0a0a0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    
+    padding: 8px 8px 8px 18px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FF914D;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: black;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
