@@ -52,7 +52,7 @@ header {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #a0a0a0;
+    background-color: #FF914D; /*this is the nav bar background color*/
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -83,4 +83,13 @@ header {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  /*----------------Search Bar--------------------*/
+  input{
+      margin: 40px 40px auto;
+      width: 20%;
+      height: 30px;
+      border: none;
+      border-radius: 10px;
   }

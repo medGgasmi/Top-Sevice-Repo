@@ -69,7 +69,7 @@
        
         
         <!----------------------------------------------------------------------->
-        
+    
         
           
           <script>
@@ -82,5 +82,29 @@
           }
           </script>
     </header>
+    
+
+    <!--Search bar-->
+
+    <div class="searchBar">  
+        <div class="searchInput"><!--search input-->
+            <input type="search" placeholder="Job type"/>
+            <script>
+                const input = document.querySelector('input');
+                let jobs = ['plamber', 'painter', 'doctor'];
+                input.addEventListener('input', showResult);
+                function showResult() {
+                    if(input in jobs){
+                        console.log()
+                    }
+                }
+            </script>
+        </div>
+        <div class="region"><!--region-->
+
+        </div>
+
+    </div>
+    
 </body>
 </html>
